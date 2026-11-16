@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Christine Wang</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Christine Wang: AI transformation leader, board member and advisor. Singapore and Munich.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
+<style>/* Layout: white page, hairline-divided sections, one sans family throughout (Geist 400/500/600). Near-black and dark-grey text; cobalt is the only highlight. No italics. */
+:root{
+  --bg:#FFFFFF; --ink:#111214; --ink-2:#3D4047; --muted:#6B6F77; --line:#E6E7EA; --accent:#2350C4; --accent-soft:#EDF1FC; --band:#F5F6F8; --tile:#FFFFFF;
+  --sans:"Geist","Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+  --t-xs:13px; --t-sm:15px; --t-md:17px; --t-lg:20px; --t-xl:34px; --t-2xl:54px; --t-fig:30px;
+  --wrap:1120px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0E0F11;--ink:#F1F2F4;--ink-2:#C8CAD0;--muted:#8F939B;--line:#25272B;--accent:#8FAEFF;--accent-soft:#161E36;--band:#15171A;--tile:#1C1F23;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E0F11;--ink:#F1F2F4;--ink-2:#C8CAD0;--muted:#8F939B;--line:#25272B;--accent:#8FAEFF;--accent-soft:#161E36;--band:#15171A;--tile:#1C1F23;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:var(--t-md);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.025em;line-height:1.1;text-wrap:balance}
+p{margin:0}
+img{max-width:100%;display:block}
+.i{width:1em;height:1em;flex:none;vertical-align:-.14em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.label{font-size:var(--t-xs);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+section.s{padding-block:72px;border-top:1px solid var(--line)}
+.s-head{display:grid;gap:10px;max-width:760px;margin-bottom:36px}
+.s-head h2,.approach h2,.contact h2{font-size:var(--t-xl)}
+/* nav */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:58px}
+.mark{font-weight:600;font-size:var(--t-md);color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav ul a{color:var(--muted);text-decoration:none;font-size:var(--t-sm)}
+.nav ul a:hover{color:var(--ink)}
+@media (max-width:900px){.nav ul{display:none}}
+/* hero: one heading, one paragraph, buttons */
+.hero{padding-block:64px 48px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);gap:64px;align-items:center}
+.hero-copy{display:grid;gap:24px;min-width:0}
+.hero h1{font-size:var(--t-2xl);letter-spacing:-.035em;line-height:1.04;max-width:14ch}
+.lede{font-size:var(--t-lg);line-height:1.55;color:var(--ink-2);max-width:58ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;padding:12px 22px;border-radius:999px;font-weight:500;font-size:var(--t-sm);text-decoration:none;border:1px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{opacity:.85}
+.portrait{margin:0}
+.portrait img{width:100%;height:auto;aspect-ratio:720/845;object-fit:cover;border-radius:4px}
+.proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:56px;padding-top:24px;border-top:1px solid var(--ink)}
+.proof b{display:block;font-size:var(--t-fig);font-weight:600;letter-spacing:-.03em;line-height:1.1;color:var(--accent)}
+.proof span{display:block;margin-top:8px;font-size:var(--t-sm);color:var(--ink-2);line-height:1.45}
+/* trusted by */
+.trusted{padding-block:28px;border-top:1px solid var(--line)}
+.trusted .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:16px 40px}
+.logo-row{display:flex;flex-wrap:wrap;align-items:center;gap:20px 48px}
+.logo-row svg{height:26px;width:auto;color:var(--ink);opacity:.85;display:block}
+.logo-row svg.sq{height:34px}
+/* experience */
+.role{display:grid;grid-template-columns:280px minmax(0,1fr);gap:40px;padding-block:28px;border-top:1px solid var(--line)}
+.role:first-of-type{border-top:1px solid var(--ink)}
+.role-meta{display:grid;gap:4px;align-content:start}
+.yr{font-size:var(--t-xs);font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.org{font-size:var(--t-lg);font-weight:600;letter-spacing:-.015em;line-height:1.25}
+.title{font-size:var(--t-sm);color:var(--ink-2)}
+.role-stats{display:flex;gap:24px;margin-top:14px}
+.role-stats b{display:block;font-size:var(--t-fig);font-weight:600;letter-spacing:-.03em;line-height:1;color:var(--accent)}
+.role-stats span{display:block;margin-top:4px;font-size:var(--t-xs);color:var(--muted)}
+.role-body{display:grid;gap:14px;max-width:68ch}
+.role-body > p{color:var(--ink-2);font-size:var(--t-md)}
+.impact{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:var(--t-sm);color:var(--ink-2)}
+.impact li{position:relative;padding-left:20px}
+.impact li::before{content:"";position:absolute;left:0;top:.72em;width:10px;height:2px;background:var(--accent)}
+.impact b{color:var(--ink);font-weight:600}
+.edu{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;margin-top:44px}
+.plain{list-style:none;margin:12px 0 0;padding:0;border-top:1px solid var(--ink)}
+.plain li{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;padding-block:12px;border-bottom:1px solid var(--line)}
+.plain b{font-weight:600;font-size:var(--t-sm)}
+.plain span{color:var(--muted);font-size:var(--t-sm)}
+.langs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}
+/* approach */
+.approach{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px;align-items:center}
+.approach img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.approach > div{display:grid;gap:16px}
+.approach p:not(.label){color:var(--ink-2);font-size:var(--t-md);max-width:56ch}
+/* help */
+.offers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
+.offer{display:grid;gap:10px;align-content:start;padding:24px 28px 0 0}
+.offer + .offer{padding-left:28px;border-left:1px solid var(--line)}
+.offer h3{font-size:var(--t-md);letter-spacing:-.01em}
+.offer p{color:var(--ink-2);font-size:var(--t-sm)}
+.ic{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--accent-soft);color:var(--accent)}
+.ic .i{width:19px;height:19px}
+/* boards */
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.cols h3{display:flex;align-items:center;gap:8px;font-size:var(--t-xs);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);padding-bottom:12px;border-bottom:1px solid var(--ink);margin-bottom:16px}
+.cols h3 .i{width:15px;height:15px;color:var(--accent)}
+.cols ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.cols li b{display:block;font-weight:600;font-size:var(--t-sm)}
+.cols li span{color:var(--ink-2);font-size:var(--t-sm)}
+/* personal */
+.personal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.p-item{display:grid;gap:10px;align-content:start}
+.p-item img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.p-item h3{display:flex;align-items:center;gap:8px;font-size:var(--t-md);letter-spacing:-.01em;margin-top:4px}
+.p-item h3 .i{color:var(--accent);width:17px;height:17px}
+.p-item p{color:var(--ink-2);font-size:var(--t-sm)}
+/* contact */
+.contact{padding-block:72px;border-top:1px solid var(--line)}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:56px;align-items:end}
+.contact h2{margin-top:12px;max-width:16ch}
+.contact p{color:var(--ink-2);margin-top:16px;max-width:50ch;font-size:var(--t-md)}
+.lines{display:grid;border-top:1px solid var(--ink)}
+.line{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-block:16px;border-bottom:1px solid var(--line)}
+.line .label{display:flex;align-items:center;gap:6px;margin-bottom:4px}
+.line b{display:block;font-weight:500;font-size:var(--t-md);user-select:all;word-break:break-all}
+.copy{font:inherit;font-size:var(--t-sm);padding:7px 14px;border-radius:999px;border:1px solid var(--ink);background:var(--bg);color:var(--ink);cursor:pointer}
+footer{padding-block:28px;border-top:1px solid var(--line);font-size:var(--t-xs);color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:960px){.personal{grid-template-columns:repeat(2,minmax(0,1fr))}.proof{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:24px}}
+@media (max-width:860px){
+  :root{--t-md:16px;--t-lg:18px;--t-xl:27px;--t-2xl:36px;--t-fig:24px}
+  .hero{padding-block:24px 32px}
+  .hero-grid{grid-template-columns:1fr;gap:20px}
+  .portrait{order:-1;justify-self:start}
+  .portrait img{width:96px;height:96px;aspect-ratio:1/1;border-radius:50%;object-position:50% 18%}
+  .proof{margin-top:32px;gap:20px}
+  section.s{padding-block:44px}
+  .s-head{margin-bottom:22px}
+  .trusted{padding-block:20px}
+  .trusted .wrap{gap:12px}
+  .logo-row{gap:16px 32px}
+  .logo-row svg{height:20px}.logo-row svg.sq{height:26px}
+  .role{grid-template-columns:1fr;gap:12px;padding-block:22px}
+  .role-stats{margin-top:10px}
+  .edu{grid-template-columns:1fr;gap:28px;margin-top:32px}
+  .plain li{display:grid;gap:2px;justify-content:start}
+  .langs li{display:flex;justify-content:space-between}
+  .approach{grid-template-columns:1fr;gap:22px}
+  .approach img{aspect-ratio:4/3}
+  .offers{grid-template-columns:1fr}
+  .offer,.offer + .offer{grid-template-columns:40px minmax(0,1fr);column-gap:14px;row-gap:4px;padding:20px 0;border-left:0;border-bottom:1px solid var(--line)}
+  .offer .ic{grid-row:span 2}
+  .cols{grid-template-columns:1fr;gap:26px}
+  .contact{padding-block:48px}
+  .contact-grid{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:460px){.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}.personal{gap:16px}}
+
+/* v9: sections separated by alternating background bands, no rules */
+section.s,.contact{border-top:0}
+.band{background:var(--band)}
+.proof{border-top:0;padding-top:0}
+.worked{padding-block:40px}
+.worked .wrap{display:grid;gap:18px}
+.logo-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.tile{display:grid;place-items:center;height:76px;padding:0 16px;border-radius:10px;background:var(--tile);color:var(--ink);text-align:center}
+.tile svg{height:26px;width:auto;max-width:100%;display:block;opacity:.85}
+.tile svg.sq{height:36px}
+.tile svg.pg{filter:grayscale(1) contrast(1.15);opacity:.8}
+.tile span{font-weight:600;font-size:var(--t-sm);letter-spacing:-.01em;color:var(--ink-2)}
+.role,.role:first-of-type{border-top:0;padding-block:0;align-items:start}
+.role{margin-top:44px}
+.role:first-of-type{margin-top:0}
+.role-body{align-content:start}
+.impact{align-content:start}
+.lead-role{padding:28px;margin-left:-28px;margin-right:-28px;border-radius:14px;background:var(--band)}
+.plain{border-top:0}
+.plain li{border-bottom:0;padding-block:6px}
+.offers{border-top:0;gap:14px}
+.offer,.offer + .offer{padding:24px;border-left:0;border-radius:12px;background:var(--band)}
+.cols h3{border-bottom:0;padding-bottom:0;margin-bottom:14px}
+.lines{border-top:0;gap:10px}
+.line{border-bottom:0;padding:14px 18px;border-radius:12px;background:var(--tile)}
+footer{border-top:0}
+@media (max-width:860px){
+  .logo-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .tile{height:60px;padding:0 10px}
+  .tile svg{height:20px}.tile svg.sq{height:28px}
+  .tile span{font-size:13px}
+  .worked{padding-block:28px}
+  .role{margin-top:32px}
+  .lead-role{padding:20px;margin-left:-4px;margin-right:-4px}
+  .offer,.offer + .offer{padding:18px;border-bottom:0}
+}
+
+/* v10: restore hairlines inside sections; bands still separate sections */
+.role,.role:first-of-type{margin-top:0;padding-block:28px;border-top:1px solid var(--line)}
+.role:first-of-type{border-top:1px solid var(--ink)}
+.plain{border-top:1px solid var(--ink)}
+.plain li{border-bottom:1px solid var(--line);padding-block:12px}
+.cols h3{border-bottom:1px solid var(--ink);padding-bottom:12px;margin-bottom:16px}
+.offers{border-top:1px solid var(--ink);gap:0}
+.offer,.offer + .offer{background:none;border-radius:0;padding:24px 28px 0 0}
+.offer + .offer{padding-left:28px;border-left:1px solid var(--line)}
+.lines{border-top:1px solid var(--ink);gap:0}
+.line{background:none;border-radius:0;padding:16px 0;border-bottom:1px solid var(--line)}
+.approach img{aspect-ratio:4/5;object-position:50% 20%}
+@media (max-width:860px){
+  .role,.role:first-of-type{padding-block:22px}
+  .offer,.offer + .offer{padding:20px 0;border-left:0;border-bottom:1px solid var(--line)}
+  .approach img{aspect-ratio:4/5;max-height:520px}
+}
+
+/* press */
+.stage{display:grid;grid-template-columns:1.25fr 1fr;gap:20px;margin-bottom:36px}
+.stage figure{margin:0}
+.stage img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:4px}
+.stage figcaption{margin-top:8px;font-size:var(--t-xs);color:var(--muted)}
+.press{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.press li{border-bottom:1px solid var(--line)}
+.press a{display:grid;grid-template-columns:220px minmax(0,1fr) 100px;gap:20px;align-items:baseline;padding-block:14px;text-decoration:none;color:var(--ink)}
+.press a:hover .hl{color:var(--accent)}
+.press .pub{font-weight:600;font-size:var(--t-sm)}
+.press .hl{font-size:var(--t-sm);color:var(--ink-2)}
+.press .dt{font-size:var(--t-xs);color:var(--muted);text-align:right}
+.logo-grid{grid-template-columns:repeat(7,minmax(0,1fr))}
+@media (max-width:960px){.logo-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:860px){
+  .stage{grid-template-columns:1fr;gap:16px;margin-bottom:24px}
+  .press a{grid-template-columns:1fr auto;gap:2px 12px}
+  .press .pub{grid-column:1}.press .dt{grid-column:2;grid-row:1}
+  .press .hl{grid-column:1 / -1}
+  .logo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+/* v11 */
+.impact li{padding-left:18px}
+.impact li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.facts li{position:relative;padding-left:14px;color:var(--ink-2);font-size:var(--t-sm);line-height:1.45}
+.facts li::before{content:"";position:absolute;left:0;top:.6em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.stage{grid-template-columns:1fr 1fr}
+.stage img{aspect-ratio:3/2;height:auto}
+.tile img{height:24px;width:auto;max-width:100%;display:block;opacity:.85}
+.tile img.tall{height:30px}
+.tile img.wide{height:18px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tile img{filter:invert(1)}}
+:root[data-theme="dark"] .tile img{filter:invert(1)}
+@media (max-width:860px){.tile img{height:19px}.tile img.tall{height:24px}.tile img.wide{height:14px}}
+.stage{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.stage img{aspect-ratio:4/5}
+@media (max-width:860px){.stage{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.stage-in{margin:40px 0 0}
+@media (max-width:860px){.stage-in{margin-top:28px}}
+/* beyond layout */
+.beyond{align-items:start}
+.side-photo{margin:0}
+.side-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;display:block}
+.side-photo figcaption{margin-top:8px;font-size:var(--t-xs);color:var(--muted)}
+.speak{display:block;margin-top:48px}
+.speak>ul{grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.stage3{grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;margin:32px 0 0}
+@media (max-width:860px){
+  .beyond{grid-template-columns:1fr}
+  .side-photo{order:-1;max-width:420px}
+  .speak{margin-top:36px}
+  .speak>ul{grid-template-columns:1fr;gap:14px}
+  .stage3{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+  .stage3 figure:last-child{grid-column:1 / -1}
+  .stage3 figure:last-child img{aspect-ratio:3/2}
+}
+/* approach route schematic */
+.route{width:100%;max-width:560px;height:auto;margin-top:12px;overflow:visible}
+.route text{font-family:inherit}
+.r-top{font-size:12px;fill:var(--ink-2);letter-spacing:.01em}
+.r-vision{stroke:var(--ink-2);stroke-width:1.25;stroke-dasharray:4 5}
+.r-vision-head{fill:none;stroke:var(--ink-2);stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
+.r-rest{fill:none;stroke:var(--muted);stroke-width:2;stroke-linejoin:round;stroke-linecap:round;opacity:.7}
+.r-now{fill:none;stroke:var(--accent);stroke-width:3.5;stroke-linejoin:round;stroke-linecap:round}
+.r-pole{stroke:var(--ink);stroke-width:1.5}
+.r-flag{fill:var(--accent)}
+.r-dot{fill:var(--band);stroke:var(--ink-2);stroke-width:1.5}
+.r-dot-now{fill:var(--accent)}
+.r-note{font-size:12px;font-weight:600;fill:var(--accent)}
+.r-note-sub{font-size:11px;fill:var(--accent)}
+.r-base{stroke:var(--line);stroke-width:1}
+.r-lab{font-size:11px;fill:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.r-lab-end{fill:var(--ink);font-weight:600}
+@media (max-width:600px){
+  .r-top{font-size:17px}.r-note{font-size:18px}.r-note-sub{font-size:16px}
+  .r-lab{font-size:15px}.r-stage{display:none}
+  .r-note-sub{transform:translateY(6px)}
+}
+/* beyond v2 */
+.beyond2{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:36px;align-items:stretch}
+.b-left{display:grid;gap:44px;align-content:start}
+.cols.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cols.speak2{grid-template-columns:1fr}
+.speak2 ul{grid-template-columns:1fr}
+.b-photo{position:relative;min-height:420px}
+.b-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;border-radius:4px}
+@media (max-width:860px){
+  .beyond2{grid-template-columns:1fr;gap:28px}
+  .b-photo{order:-1;min-height:0}
+  .b-photo img{position:static;aspect-ratio:4/5;height:auto;max-height:480px}
+  .cols.two{grid-template-columns:1fr}
+  .b-left{gap:28px}
+}
+/* help v2 */
+.offer{grid-template-rows:auto auto auto 1fr}
+.offer .proof{margin-top:6px;padding-top:12px;border-top:1px solid var(--line);font-size:var(--t-xs);color:var(--ink-2);line-height:1.5}
+.offer .proof b{display:block;font-weight:600;color:var(--accent);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+.help-cta{display:inline-flex;align-items:center;gap:8px;margin-top:28px;font-weight:600;font-size:var(--t-sm);color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.help-cta .i{width:16px;height:16px}
+.help-cta:hover{color:var(--ink)}
+@media (max-width:860px){.offer .proof{grid-column:2}}
+.offer .proof{display:block}
+.offer .proof .pl{display:block;font-weight:600;color:var(--accent);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.offer .proof .pt{display:block}
+@media (min-width:861px){.offer > p{min-height:4.9em}}
+.group-head{display:flex;justify-content:space-between;gap:16px;padding:14px 0 0;margin-bottom:-8px;font-size:var(--t-xs);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.group-head span:last-child{color:var(--muted);font-weight:500}
+.group-head{padding:0 0 12px;margin:0}
+/* value proposition strip */
+.proof.vp{grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.proof.vp b{font-size:22px;letter-spacing:-.02em;line-height:1.2}
+@media (max-width:960px){.proof.vp{grid-template-columns:1fr;gap:18px}}
+/* approach route v2 */
+.route2{width:100%;max-width:560px;height:auto;margin-top:12px;overflow:visible}
+.route2 text{font-family:inherit}
+.r-cap{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;fill:var(--ink)}
+.r-long{stroke:var(--ink-2);stroke-width:2}
+.r-tick{stroke:var(--ink-2);stroke-width:1.5}
+.r-zoom{fill:var(--accent);opacity:.07}
+.r-bar{fill:var(--accent)}
+.r-mid{fill:var(--accent);text-transform:none;letter-spacing:.02em;font-weight:600}
+@media (max-width:600px){.r-cap{font-size:16px}}
+.r-zoom{fill:var(--accent);opacity:.06}
+.r-zoom-edge{stroke:var(--accent);stroke-width:1;stroke-dasharray:3 4;opacity:.6}
+/* approach minimal */
+.route3{width:100%;max-width:560px;height:auto;margin-top:16px;overflow:visible}
+.route3 text{font-family:inherit}
+.r3-lab{font-size:12px;letter-spacing:.08em;text-transform:uppercase;fill:var(--muted)}
+.r3-v{fill:var(--accent);font-weight:600}
+.r3-dot{fill:var(--accent)}
+.r3-start{fill:var(--ink-2)}
+.r3-back{stroke:var(--ink-2);stroke-width:1.5}
+.r3-back-head{fill:none;stroke:var(--ink-2);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.r-step{fill:none;stroke:var(--accent);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;opacity:.45}
+.r-step.now{opacity:1}
+@media (max-width:600px){.r3-lab{font-size:17px}}
+/* approach curved */
+.route4{width:100%;max-width:560px;height:auto;margin-top:12px;overflow:visible}
+.route4 text{font-family:inherit}
+.r4-back{fill:none;stroke:var(--ink-2);stroke-width:1.5;stroke-dasharray:5 5}
+.r4-head{fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.r4-head.back{stroke:var(--ink-2)}
+.r4-head.now{stroke:var(--accent)}
+.r4-head.soft{stroke:var(--accent);opacity:.45}
+.r4-hop{fill:none;stroke:var(--accent);stroke-width:2.2;stroke-linecap:round;opacity:.45}
+.r4-hop.now{opacity:1;stroke-width:2.6}
+.r4-today{fill:var(--accent)}
+.r4-vision{fill:var(--accent)}
+.r4-lab{font-size:12px;letter-spacing:.08em;text-transform:uppercase;fill:var(--muted)}
+.r4-v{fill:var(--accent);font-weight:600}
+.r4-mid{text-transform:none;letter-spacing:.01em;fill:var(--ink-2)}
+.r4-note{font-size:12px;fill:var(--ink-2)}
+@media (max-width:600px){.r4-lab,.r4-note{font-size:17px}.r4-mid{display:none}}
+#approach{padding-bottom:20px}
+#boards{padding-top:48px}
+@media (max-width:860px){#approach{padding-bottom:12px}#boards{padding-top:32px}}
+/* contact v2 with kit */
+.c-sub{color:var(--ink-2);font-size:var(--t-md);margin-top:12px}
+.engage{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:36px;align-items:stretch}
+.eng{background:var(--bg);border-radius:12px;padding:24px 26px;display:flex;flex-direction:column;gap:12px}
+.eng-k{font-size:var(--t-xs);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.eng .lines{border-top:1px solid var(--ink)}
+.eng.kit h3{font-size:var(--t-lg);letter-spacing:-.015em;line-height:1.25}
+.eng.kit p{color:var(--ink-2);font-size:var(--t-sm)}
+.eng.kit .btn{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;margin-top:6px}
+.eng.kit .btn .i{width:16px;height:16px}
+.kit-meta{font-size:var(--t-xs);color:var(--muted)}
+.kit-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:var(--t-sm);font-weight:500;color:var(--accent);text-decoration:none}
+.kit-link .i{width:15px;height:15px}
+.kit-link:hover{text-decoration:underline}
+@media (max-width:860px){.engage{grid-template-columns:1fr;gap:16px;margin-top:24px}.eng{padding:20px}}
+.eng.kit h3{margin:0}.eng.kit p{margin:0}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <a class="mark" href="#top">Christine Wang</a>
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#boards">Boards</a></li>
+      <li><a href="#personal">Personal</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>Leading AI transformation at enterprise scale</h1>
+        <p class="lede">Operator, advisor and founder. I walk into ambiguity and build the organisational system underneath it, creating new business models and unfair advantage. Today, I lead AI &amp; Digital Enablement at DHL Global Forwarding. Previously Partner and Head of DHL Consulting APAC, Managing Director of Lufthansa Innovation Hub and CEO of Meero China, with earlier roles at Alibaba and BCG.</p>
+        <div class="cta">
+          <a class="btn primary" href="#experience">View experience</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <a class="kit-link" href="#kit">Free: AI Operating Model Kit <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+      </div>
+      <figure class="portrait"><img src="headshot.jpg" alt="Portrait of Christine Wang" width="720" height="845"></figure>
+    </div>
+    <div class="proof vp">
+      <div><b>Strategist and operator</b><span>Strategy roots at BCG and Alibaba; full P&amp;L as CEO of Meero China</span></div>
+      <div><b>Agentic operating model</b><span>Building the AI operating model at DHL Global Forwarding from 0 to 1, with agents in the commercial core</span></div>
+      <div><b>Senior advisor to leadership</b><span>Former board member at Navit, Squake and Travelshift; venture partner and advisor across Asia, Europe and the US</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="band worked" aria-label="Organisations">
+  <div class="wrap">
+    <p class="label">Selected employers and clients</p>
+    <div class="logo-grid"><div class="tile"><img class="tall" src="data:image/png;base64,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" alt="BCG"></div><div class="tile"><svg viewBox="0 0 284.38 75.09" role="img" aria-label="BCG X" fill="currentColor"><title>BCG X</title><path d="M185.05,31.27h-29.11l-4.42,6.94-4.42,6.94h22.42c-1.34,4.53-3.88,8.44-7.36,11.21-3.47,2.78-7.87,4.42-12.91,4.42-6.33,0-12.010-2.65-16.11-6.89-4.1-4.24-6.62-10.08-6.62-16.46s2.55-12.04,6.68-16.230c4.14-4.19,9.87-6.82,16.25-6.82,2.78,0,5.35,.44,7.71,1.24,2.37,.8,4.53,1.95,6.48,3.39l3.910-6.22,3.91-6.22c-2.98-2.110-6.35-3.75-10.03-4.87-3.68-1.120-7.66-1.71-11.88-1.71-5.61,0-10.7,1.03-15.23,2.89-4.53,1.86-8.49,4.56-11.83,7.91-7.97,7.97-10.21,16.02-11.8,23.43-1.59,7.41-2.55,14.17-7.95,19.57-2.26,2.26-4.76,3.99-7.48,5.14-2.73,1.16-5.68,1.75-8.87,1.75-6.53,0-12.42-2.67-16.68-6.92-4.26-4.24-6.88-10.05-6.88-16.33s2.62-11.93,6.88-16.16c4.26-4.23,10.14-6.93,16.68-6.98,2.73,.05,5.27,.46,7.61,1.22,2.34,.76,4.47,1.86,6.38,3.3l3.96-6.22,3.96-6.22c-2.98-2.11-6.35-3.7-10.03-4.77-3.68-1.07-7.66-1.61-11.88-1.61-6.48,0-12.52,1.57-17.8,4.31-5.27,2.74-9.77,6.65-13.17,11.33-1.34-4.12-4.09-7.64-7.86-10.13-3.77-2.5-8.55-3.96-13.95-3.96H0V73.55H37.13c4.68,0,8.85-1.1,12.32-3.02,3.47-1.92,6.25-4.64,8.15-7.88,3.45,3.81,7.66,6.92,12.45,9.08,4.78,2.16,10.13,3.37,15.84,3.37,6.74,0,12.88-1.57,18.21-4.37,5.32-2.8,9.82-6.84,13.27-11.78,3.29,4.89,7.79,8.92,13.15,11.74,5.36,2.82,11.58,4.41,18.32,4.41,10.34,0,19.52-4.22,26.11-11.02,6.6-6.8,10.61-16.19,10.61-26.53,0-1.08-.05-2.13-.14-3.18-.09-1.04-.22-2.07-.37-3.1ZM15.64,22.78v-7.87h17.8c2.26,0,4.27,.82,5.71,2.21,1.44,1.39,2.31,3.34,2.31,5.61s-.87,4.24-2.31,5.66c-1.44,1.42-3.45,2.26-5.71,2.26H15.64v-7.87Zm27.34,35.01c-1.54,1.48-3.68,2.38-6.04,2.38H15.64v-16.35h21.29c2.37,0,4.5,.87,6.04,2.33,1.54,1.45,2.49,3.49,2.49,5.8s-.95,4.37-2.49,5.85Z"/><path d="M213.51,1.05h-15.21l21.15,33.23c1.27,2,1.27,4.54,0,6.54l-21.150,33.23h15.21c2.86,0,5.53-1.46,7.07-3.88l20.76-32.62L220.58,4.92c-1.54-2.42-4.2-3.88-7.07-3.88Z"/><path d="M263.23,34.28L284.38,1.05h-15.21c-2.86,0-5.53,1.46-7.06,3.88l-20.76,32.62,20.76,32.62c1.54,2.42,4.2,3.88,7.06,3.88h15.21l-21.15-33.23c-1.27-2-1.27-4.54,0-6.540Z"/>
+</svg></div><div class="tile"><svg class="" viewBox="0.00 10.30 24.00 3.40" role="img" aria-label="DHL" fill="currentColor"><title>DHL</title><title>DHL</title><path d="M4.22 10.303l-.767 1.043h4.18c.21 0 .208.078.105.218-.105.142-.28.39-.386.534-.054.073-.154.207.171.207h1.71l.505-.69c.314-.426.028-1.312-1.095-1.312H4.22zm7.204 0l-1.475 2.002h5.39l1.473-2.002H14.61l-.843 1.146h-.985l.846-1.146h-2.203zm6.105 0l-1.474 2.002h2.334l1.472-2.002H17.53zm-12.845 1.3l-1.54 2.094h3.754c1.24 0 1.932-.844 2.145-1.136h-2.56c-.326 0-.226-.133-.172-.207.107-.143.283-.388.388-.53.104-.14.107-.22-.105-.22h-1.91zM0 12.562v.242h3.398l.176-.242H0zm9.762 0l-.836 1.136h2.203l.836-1.136H9.762zm3.185 0l-.836 1.136h2.203l.836-1.136h-2.203zm2.918 0s-.159.22-.238.326c-.276.374-.033.81.87.81h3.538l.834-1.136h-5.004zm5.408 0l-.177.242H24v-.242h-2.727zM0 13.01v.24h3.068l.178-.24H0zm20.943 0l-.175.24H24v-.24h-3.057zM0 13.457v.24h2.74l.176-.24H0zm20.615 0l-.177.24H24v-.24h-3.385z"/></svg></div><div class="tile"><svg class="" viewBox="-0.00 6.00 24.00 12.00" role="img" aria-label="Alibaba Group" fill="currentColor"><title>Alibaba Group</title>
+  <title>Alibaba</title>
+  <path d="M24 14.014c-2.8 1.512-5.62 2.896-8.759 3.524-.7.139-1.476.139-2.187.043-.678-.085-1.017-.682-.776-1.31.23-.585.536-1.181.93-1.671.852-1.065 1.814-2.034 2.678-3.088a15.75 15.75 0 001.422-2.054c.306-.511.164-1.129-.372-1.384-.897-.437-1.859-.745-2.81-1.075-.11-.043-.274.074-.492.149.273.244.47.425.743.67-2.821.48-5.49 1.16-8.08 2.098-.012.053-.033.095-.023.117.383.585.208 1.032-.35 1.394a2.365 2.365 0 00-.568.522c1.706.5 3.226.213 4.68-.735-.087-.127-.175-.244-.262-.372.546.096.874.394.918.862.011.107-.054.213-.087.32-.077-.086-.175-.17-.24-.267-.045-.064-.056-.138-.088-.245-1.728 1.15-3.587 1.438-5.632.842 0 .404-.022.745.011 1.075.022.287-.098.415-.36.564-.591.362-1.204.735-1.696 1.214-.59.585-.371 1.299.427 1.597.907.34 1.859.35 2.81.234 1.126-.139 2.23-.32 3.456-.49-1.433.67-2.844 1.14-4.33 1.33-1.04.14-2.078.214-3.106-.084-1.476-.415-2.133-1.501-1.75-2.96.361-1.363 1.236-2.449 2.176-3.45 3.139-3.332 7.108-5.024 11.7-5.365 1.072-.074 2.155.064 3.16.511 1.411.639 2.002 1.99 1.313 3.354-.448.905-1.072 1.735-1.695 2.555-.612.809-1.301 1.554-1.946 2.331-.186.234-.361.48-.503.745-.274.5-.088.83.492.778 1.213-.118 2.45-.213 3.62-.511 1.716-.437 3.389-1.054 5.084-1.597.175-.043.339-.107.492-.17z" />
+</svg></div><div class="tile"><svg class="sq" viewBox="0.00 0.00 24.00 24.00" role="img" aria-label="Lufthansa" fill="currentColor"><title>Lufthansa</title><title>Lufthansa</title><path d="M24,12c0-6.648-5.352-12-12-12C5.376,0,0,5.352,0,12c0,6.624,5.376,12,12,12C18.648,24,24,18.624,24,12z M23.136,12c0,6.12-4.992,11.136-11.136,11.136C5.88,23.136,0.864,18.121,0.864,12C0.864,5.856,5.88,0.864,12,0.864 C18.144,0.864,23.136,5.856,23.136,12z M16.248,11.28c-0.264,0-0.6,0-1.032,0.024l0.312-0.528h0.504c1.8,0,3.144,0.096,4.368,0.312 l0.552-0.528c-1.368-0.24-3.024-0.384-4.704-0.384H15.84l0.264-0.504h0.456c1.752,0,3.336,0.144,4.872,0.432l0.576-0.552 c-1.728-0.336-3.576-0.503-5.568-0.503c-0.849,0.003-1.698,0.043-2.544,0.12c-0.96,2.063-2.496,3.264-4.224,3.24 C9,12.384,8.159,12.097,7.08,11.52l-1.008-0.576l0.312-0.288l2.328,1.008l0.504-0.384L4.512,9.144l-0.72,0.552L2.112,9l0.024,0.696 c2.256,1.032,3.192,1.608,5.568,3.312c3.096,2.208,5.856,3.408,9.696,4.176l1.008-0.96h-0.24c-2.544,0-4.824-0.84-6.144-2.256 c1.104-0.672,2.471-0.983,4.368-0.983c0.504,0,1.224,0.047,1.896,0.119l0.576-0.552c-0.9-0.11-1.805-0.166-2.712-0.168 c-0.609-0.001-1.217,0.023-1.824,0.072l0.432-0.528c0.511-0.03,1.024-0.046,1.536-0.048c1.272,0,2.112,0.048,3.072,0.192 l0.552-0.528C18.912,11.377,17.52,11.28,16.248,11.28z"/></svg></div><div class="tile"><img class="" src="data:image/png;base64,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" alt="ExxonMobil"></div><div class="tile"><img class="" src="data:image/png;base64,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" alt="Anglo American"></div><div class="tile"><svg class="" viewBox="0.00 6.06 24.00 11.87" role="img" aria-label="SAP" fill="currentColor"><title>SAP</title><title>SAP</title><path d="M0 6.064v11.872h12.13L24 6.064zm3.264 2.208h.005c.863.001 1.915.245 2.676.633l-.82 1.43c-.835-.404-1.255-.442-1.73-.467-.708-.038-1.064.215-1.069.488-.007.332.669.633 1.305.838.964.306 2.19.715 2.377 1.9L7.77 8.437h2.046l2.064 5.576-.007-5.575h2.37c2.257 0 3.318.764 3.318 2.519 0 1.575-1.09 2.514-2.936 2.514h-.763l-.01 2.094-3.588-.003-.25-.908c-.37.122-.787.189-1.23.189-.456 0-.885-.071-1.263-.2l-.358.919-2 .006.09-.462c-.029.025-.057.05-.087.074-.535.43-1.208.629-2.037.644l-.213.002a5.075 5.075 0 0 1-2.581-.675l.73-1.448c.79.467 1.286.572 1.956.558.347-.007.598-.07.761-.239a.557.557 0 0 0 .156-.369c.007-.376-.53-.553-1.185-.756-.531-.164-1.135-.389-1.606-.735-.559-.41-.825-.924-.812-1.65a1.99 1.99 0 0 1 .566-1.377c.519-.537 1.357-.863 2.363-.863zm10.597 1.67v1.904h.521c.694 0 1.247-.23 1.248-.964 0-.709-.554-.94-1.248-.94zm-5.087.767l-.748 2.362c.223.085.481.133.757.133.268 0 .52-.047.742-.126l-.736-2.37z"/></svg></div><div class="tile"><img class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAiCAYAAABm4YqjAAADUklEQVR4AeyYjVbCMAyFpy+uPrn2w5PjpaSjda0jGM6uTZM0f7vA5HX7fr2XpQfFLa+cwPcEIA+keSvbHnwWP/xno4TNK9oEIM9IzR8jzun73BMYJc9zTyO7G5pAkmdoXOmsE0jy6DRSHppAkmdoXOmsE1hCHk2Q8vNOIDJ5+LmAnw4U6MCj3zFqVGi9qkdW2yqZPIpWHp31Z0Ty0CRN8LtU3SQ6gB2/2v4oe2pUWF3UrHpks61ae3Liw0yvaohInt6B9vpdDeTkDTfp5BLc9O4so5Hnhv1uq6mcOYEmoUfJAwN7MbOBvVgvxQjqX7/RFVNeCybAbF9GybOgjkMhlTC8Q2gKHdDA2BTY2PNJZmCP3mB61tpmPrZixw8go2dVoDsKjYdMPFbyGtijb8H8bG35oScWHxbICvRbHPJo6T8yjV0a+VFt7MEmL/wU2NmLy8YePWCwta3WYTdfzrIHyPiyKrAdAbk0HrLl0bimVx0y5/FHVuCve5VbNvQh/9vS5pAvjRSB4ZSl6+KM54geeLZaR75e3/rsX+ypz/IgT6812idP/XVkw2FlOLyzAMNCNxsal3yz48+Mp/WpPCvHRzTycPP2CGSDYVj42t5beT4CIzbi4u/Fpi7iGfBbDc2J7OW7V2vrHLHoxbOjf49GHhpiGBSPvAe70Z6PDkRlfHWvMrY9UNeefYVNc6psuTwdNtWrjK0bEcljzUEgQ+sm/3owliTX9gQikscjBDqI1O40LdMnEJE8fB15D8UQaHBAT+Xu9e/p6qZ7fOozl3008kCaS+Hlj5EIHWBf1FfXrwdzFeV248WlBvQA+fbUfA15yAe8/smIjVXRc079XXkleWimB25hQZXW71+W38rZeg602lrnzH53XUmeu8kXO6x+Blod/+h49BNnSa3RyMMQ7r2jsON3dPg951t5qKHn/Aofcnt1eTry4886jGjkoUHeUQwC0LiBPcCOnwK9Qn2Qe234aVxkdEDrqGNix9fAXmF6VtUjo2sBO6hzj/oTQ6Hnm71EJE/dGM0B1Z8hUwOIkJs6waFao5PnUPOLDv+bsEmef3Or5zea5Jk/01UR+ZqxZxtbV+Xqipvk6RrTwzhBIMWphSV5Th1/7ORJntj379TqvwAAAP//nNse7wAAAAZJREFUAwDrUbwmQB+NmQAAAABJRU5ErkJggg==" alt="Smallpdf"></div><div class="tile"><span>Meero</span></div><div class="tile"><img class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAAAkCAYAAACJ39jlAAAE70lEQVR4AeybXXLbMAyEnV45OUZy5pafpqtZQaBEWbQiJep4TRJ/BMAlnZf+edz/fksHPkuhjr9lDVzGvIi3fW4SbevXFa0hBmR5L8k7ynL4uIw5tvgMypavm0QtXbqmDWQAEGNrBfjgC1Z9bxKttuhyBrwitcP/KtWAtzJGIAdFNfkQi5gToS9uEnk3rj/nsHlFvBKIIcJ8FAUow+yDHMgWPxkREzJpPRkzEmHcgkmgZJHFoEg3zWyQuY3m+KITWEt3j48HfeGw1QtIACEghmRbRvzwdx/28PUwz0g0KBq+0oArfhTZcvhZbHw9POuWWO7zU+exDxw+JIj10tcM0c7XxPI1/r5+ZCSCweAxscwXMXm3aonRYkPMWeIIbwwd4Ay4UMOifMVDL6LVDzGWjGLMyXlkJILBYCloi64lBjYxwSx2i03m9xtkWwjUemmzvlXPICNRFqAm8wJqNr3ksQjWkLBX/CvG8RehhSD0q8Wu1gt6Lt24914SKeBRI0UIR+15lX0gyBG5OgkHItVIlP1GcnhZkpltZrdHxh4ZajGjLcU6pM/8pYuj26KL8Vzvc2y3wH1b536w+LCf58cceQuiL2v3m5G1RqItP1NbbD2ZLXP2yBALJCYNi7bIHdJj63Lm0sWRvQA+6LAVWCMHkjGyRrcF+LWA2LKbHawUHUZyXwrzWSNRzSkyvmbXW157BeM+HHKUra39MLCt7UUzATZnx6vznPCglUTzxh7fxknix29/qh39snz32bxnJIo307tXezaXfNz/1XPlB+EADXYga8lhyQ6d0BILG89Bc+RXhfo85J+RaFDYFw2z5emnHBJFgphsJos2S2uP3RILexBj+kviuszW9aecRxJlxcVmXbLQ0n1q2/Ni9rxM2d8sPeOXco/7RBJlxR2XTd+dIIzjLLWRU6wUAsXLGm1Ou44kyhLlBkdkdllzMrtXy8j1LLnEWmt5XZZAFOgkqhXIDY7A94yAQOQac+OmC1F31Jrcsr2u+ufBWIuTaBTumPxv1I4I+1wzAnFI3HRh3w7Pe2e5QeznI57EszeJvrOsjMBnOaTslSc3iL23Z1nsvTHX/L3XXyKRCz0At7gGt9M8u23S/dax1ts9BNrj2/0cRKLs8CFP9w2/MSCHefStZc+st7xCe1vhMdhnb7wt/l7TByTqnUDveFuKi7YUC3EA86h/9bq2J3JyqqElL3+NiNfi08Nmdr6Q6NnAZ3upvKnP1nRlv9nhvqgYJ+zAAUjkwh779o63JSd/4qMfuqHoqChrXoSjDqFs1+3j9RzRd/qk5Me9IRHNjRgN5FEZsYu+rGXOPEI6H6MNa9drjtwhuUZeoywnZOiwY+4xNJceGyC5xqjPbLBFLrB+BvJvGYkvOx0yNUbIhjqiDtmSHl31kkEiAkTg1Iroy1q+zDNIr/FZG/wUw0fkDtcxd53myAXJfJTOR9drvqaX3dLoMdbmxHEbEclle+cQyF86SDjGhETj4p5ctgOTQy1V9CQSsZxA/vKVrR7p/zsbFPfX5TrwFjLm8HlBgrh5iS8x3AECxZfvJpF36AfMIRIHrVJ4QSAChACS10ZssAf4uh2xZwTC4P45ows/Cxw0B+5VQQgAOZaAjftpHuNJPow3iYY2/MgvDh7sKQ5/sBjjdCRazPZWPtMBSAD4mQNLMdAD7MGS7aj7BwAA//+xnjylAAAABklEQVQDADiCO4HHQShAAAAAAElFTkSuQmCC" alt="Allianz"></div><div class="tile"><img class="wide" src="data:image/png;base64,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" alt="Daimler"></div><div class="tile"><img class="" src="data:image/png;base64,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" alt="Allergan"></div><div class="tile"><svg class="sq pg" viewBox="0.00 0.00 720.00 720.00" role="img" aria-label="Procter &amp; Gamble" fill="currentColor"><title>Procter &amp; Gamble</title> <radialGradient id="SVGID_1_" cx="156.09" cy="143.71" r="661.27" gradientTransform="translate(-6 -6) scale(1.0167)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#00a1df"/> <stop offset=".13" stop-color="#0092d7"/> <stop offset=".37" stop-color="#006cc1"/> <stop offset=".62" stop-color="#003da6"/> <stop offset=".73" stop-color="#043799"/> <stop offset=".93" stop-color="#102777"/> <stop offset="1" stop-color="#152169"/> </radialGradient> <circle cx="360" cy="360" r="360" fill="url(#SVGID_1_)"/> <radialGradient id="SVGID_2_" cx="107.95" cy="60.5" r="1096.43" gradientTransform="translate(-6 -6) scale(1.0167)" gradientUnits="userSpaceOnUse"> <stop offset=".02" stop-color="#fff"/> <stop offset=".03" stop-color="#fbfeff"/> <stop offset=".09" stop-color="#bae7f9"/> <stop offset=".14" stop-color="#87d5f4"/> <stop offset=".19" stop-color="#63c9f1"/> <stop offset=".23" stop-color="#4cc1ef"/> <stop offset=".26" stop-color="#44beee"/> <stop offset=".28" stop-color="#37b8eb"/> <stop offset=".35" stop-color="#19ace5"/> <stop offset=".41" stop-color="#07a4e0"/> <stop offset=".45" stop-color="#00a1df"/> <stop offset=".79" stop-color="#0045ab"/> <stop offset=".82" stop-color="#003da6"/> <stop offset=".96" stop-color="#0059b6"/> </radialGradient> <path fill="url(#SVGID_2_)" d="M95.6 359.9C95.6 195 199.7 54.4 345.8.3 153.6 7.8 0 165.9 0 360c0 194.3 153.9 352.6 346.4 359.7C200.1 665.7 95.6 525 95.6 359.9z"/> <defs> <filter id="Adobe_OpacityMaskFilter" width="346.4" height="719.4" x="0" y=".3" filterUnits="userSpaceOnUse"> <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/> </filter> </defs> <mask id="SVGID_3_" width="346.4" height="719.4" x="0" y=".3" maskUnits="userSpaceOnUse"> <g filter="url(#Adobe_OpacityMaskFilter)"> <radialGradient id="SVGID_4_" cx="302.95" cy="349.21" r="381.37" fx="2.18" fy="354.33" gradientTransform="matrix(.03136 -1.0162 1.0341 .03192 -68.63 645.74)" gradientUnits="userSpaceOnUse"> <stop offset=".1" stop-color="#fff"/> <stop offset=".35" stop-color="#fdfdfd"/> <stop offset=".45" stop-color="#f6f6f6"/> <stop offset=".51" stop-color="#eaeaea"/> <stop offset=".57" stop-color="#d9d9d9"/> <stop offset=".62" stop-color="#c3c3c3"/> <stop offset=".66" stop-color="#a7a7a7"/> <stop offset=".7" stop-color="#868686"/> <stop offset=".73" stop-color="#606060"/> <stop offset=".77" stop-color="#353535"/> <stop offset=".8" stop-color="#060606"/> <stop offset=".8"/> </radialGradient> <path fill="url(#SVGID_4_)" d="M95.6 359.9C95.6 195 199.7 54.4 345.8.3 153.6 7.8 0 165.9 0 360c0 194.3 153.9 352.6 346.4 359.7C200.1 665.7 95.6 525 95.6 359.9z"/> </g> </mask> <radialGradient id="SVGID_5_" cx="281.36" cy="290.9" r="445.49" gradientTransform="translate(-6 -6) scale(1.0167)" gradientUnits="userSpaceOnUse"> <stop offset=".32" stop-color="#44beee" stop-opacity="0"/> <stop offset=".48" stop-color="#2b99d9" stop-opacity=".27"/> <stop offset=".67" stop-color="#1476c6" stop-opacity=".58"/> <stop offset=".82" stop-color="#0561ba" stop-opacity=".84"/> <stop offset=".92" stop-color="#0059b6"/> </radialGradient> <path fill="url(#SVGID_5_)" d="M95.6 359.9C95.6 195 199.7 54.4 345.8.3 153.6 7.8 0 165.9 0 360c0 194.3 153.9 352.6 346.4 359.7C200.1 665.7 95.6 525 95.6 359.9z" mask="url(#SVGID_3_)"/> <g> <path d="M353.9 325.7c23.9-58.9-20.8-74.9-49.9-74.9h-96.4c8 5.5 6.7 12.8 5.1 17.3l-56.2 179.5c-2.2 7.1-10.6 14.6-15.1 15.7h78c-4.3-.8-10.4-6.9-8.2-15.2l20.4-64.9c.1 0 93.9 12.7 122.3-57.5zm-75.8-58.4c10.2 0 38.5 1.4 20.2 54.9-19.1 56.2-61.5 44.6-61.5 44.6l31.2-99.5h10.1z" fill="#fff"/> <path d="M416.3 463.4h52.5c-16.8-5.4-41.6-21.3-51.5-32.6 8-8.7 17.9-19.7 19.7-42h-27.2s5.2 3 5.2 9.4c0 5.9-2.4 14.1-7 19.8-8-11.8-16.5-25.3-19.5-45.1 10.7-5.3 25.7-11.1 37.6-21.5 11.3-9.9 13.9-19.3 14.1-25.4v-.8c0-6.4-2.5-12.4-7.1-16.9-7.9-7.8-20.3-11-33.4-8.6-10.5 2-19.4 7.6-23.9 11.7-15.8 14.9-17.8 39.4-17.8 50.5 0 2.7.1 4.7.2 5.9-.9.4-2.5 1-2.5 1-11.6 4.3-42.5 12.5-53.5 37.9-1.4 3.2-3.4 10.2-3.4 18.3 0 7 1.5 14.8 6 21.9 7.8 12.2 21 19.9 42.2 19.5 23-.4 45.7-16.1 49.7-19 3.9 3.7 14.2 13.4 19.6 16zm0-142c-2.7 17.1-24.9 34.4-30.3 36.7-1-9.6-.5-24.8 7.5-37.2 5.3-8.2 12.4-11.8 18.1-9.8 4.6 1.6 5.1 5.8 4.7 10.3zm-30.8 114.4c-3.1 1.9-15.3 8.1-26.7 9.2-10.6 1-28.2-3.1-28.1-24.3 0-18.1 19.7-31.4 30.4-36 4.3 17.5 14 37.3 24.4 51.1z" fill="#fff"/> <path d="M575.8 267.5c31.2-7.5 56.9 16.9 59.2 18.6l8.9-28.3c-12.3-3.7-101.8-34-165.1 38.2-38.9 44.4-48.4 135.4.9 159.8 52.8 26.1 111.1-4 115.4-6.1l24.1-76.8c2.6-9.3 8.5-15.3 18.9-19.2h-83.8c12.2 5.1 11.3 14.3 10.4 18.1l-24.1 76.8c-3.2.6-70.6 17.4-32.9-100.5 8.3-25.3 31-71.7 68.1-80.6z" fill="#fff"/> </g> </svg></div></div>
+  </div>
+</section>
+
+<section class="s" id="experience">
+  <div class="wrap">
+    <div class="s-head"><p class="label">Experience</p><h2>Impact across fifteen years and two continents</h2></div>
+
+    <article class="role">
+      <div class="role-meta">
+        <span class="yr">2026 – today</span>
+        <span class="org">DHL Global Forwarding</span>
+        <span class="title">VP, AI &amp; Digital Enablement</span>
+      </div>
+      <div class="role-body">
+        <p>Mandate: build the AI capability of DHL Group's air and ocean freight business from scratch, and put it into daily use</p>
+        <ul class="impact">
+          <li><b>0 → 1</b>: built AI &amp; Digital Enablement from scratch; leads 90+ people across product, engineering and a dedicated AI delivery centre</li>
+          <li><b>Double-digit million profit potential</b> in the AI portfolio across pricing, tender management and sales</li>
+          <li><b>Months → weeks</b> AI delivery cycles, through a new build model and joint business-technology teams</li>
+          <li><b>Leads an AI pricing engine and agentic workflows</b> for rates and tenders, with experts validating every decision</li>
+          <li><b>Designed the AI-era operating model</b>: engagement model with the business units, governance and adoption built in from day one</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="role">
+      <div class="role-meta">
+        <span class="yr">2024 – 2026</span>
+        <span class="org">DHL Consulting</span>
+        <span class="title">Partner, Head of Asia Pacific</span>
+      </div>
+      <div class="role-body">
+        <ul class="impact">
+          <li><b>Ran DHL's in-house consultancy across Asia Pacific</b>, with clients in automotive, pharma, consumer and industrial goods</li>
+          <li><b>C-level sparring partner</b> to division and business-unit leaders on AI adoption, supply-chain digitisation and growth</li>
+          <li><b>Recruited and built the regional team</b></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="role">
+      <div class="role-meta">
+        <span class="yr">2019 – 2024</span>
+        <span class="org">Lufthansa Innovation Hub</span>
+        <span class="title">Managing Director</span>
+      </div>
+      <div class="role-body">
+        <ul class="impact">
+          <li><b>10 months</b> from Head of Asia to Managing Director, reporting to the Lufthansa Group Executive Board</li>
+          <li><b>Double-digit million budget</b> and teams across Berlin, Singapore and Shanghai</li>
+          <li><b>Through the pandemic</b>: led the restructuring and kept the venture pipeline running</li>
+          <li><b>5 ventures launched</b>: Navit and Squake spun out (board seat at both), plus Uptrip, Cloopio and Swifty, an early GPT-4 travel assistant</li>
+          <li><b>Top-rated digital lab</b> in Germany by Capital, 2023</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="role">
+      <div class="role-meta">
+        <span class="yr">2018 – 2024</span>
+        <span class="org">CX Consulting</span>
+        <span class="title">Founder, independent advisory</span>
+      </div>
+      <div class="role-body">
+        <ul class="impact">
+          <li><b>2024 · 10 growth initiatives</b> for a European productivity-software company, which proved the B2B case and led to a dedicated B2B team</li>
+          <li><b>2024 · Saudi government mandate</b>: designed an immersive-tech incubator and secured partnerships across Saudi Arabia and the UAE</li>
+          <li><b>2019 · CEO, Meero Greater China</b>: launched the China business of a French computer-vision unicorn, from local entity and team to a commercial pipeline</li>
+          <li><b>2018 · New business line for a global energy major</b>: built a circular-economy venture in China from concept to launch plan</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="role">
+      <div class="role-meta">
+        <span class="yr">2016 – 2017</span>
+        <span class="org">Alibaba Group</span>
+        <span class="title">Global Leadership Associate, leadership rotation programme</span>
+      </div>
+      <div class="role-body">
+        <ul class="impact">
+          <li><b>Top 1%</b>: selected into the Alibaba Global Leadership Associate programme</li>
+          <li><b>+20% above GMV target</b> for key AliExpress accounts, including P&amp;G and Li-Ning</li>
+          <li><b>Advised the AliExpress Chief Commercial Officer</b> on international expansion; top performance rating</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="role">
+      <div class="role-meta">
+        <span class="yr">2012 – 2018</span>
+        <span class="org">BCG &amp; BCG Digital Ventures</span>
+        <span class="title">Project Leader, Lead Venture Architect</span>
+      </div>
+      <div class="role-body">
+        <ul class="impact">
+          <li><b>Employee #1</b> of BCG Digital Ventures in Berlin, and its first Venture Architect in Shanghai; helped set up BCG Digital Ventures China</li>
+          <li><b>Built ventures from zero</b> in healthcare, insurance and sustainability</li>
+          <li><b>€50M synergies</b> identified on an industrial acquisition; operations optimisation in mining</li>
+        </ul>
+      </div>
+    </article>
+
+    <div class="edu">
+      <div><span class="label">Education</span><ul class="plain">
+        <li><b>INSEAD</b><span>MBA · Hans Weisser Scholar</span></li>
+        <li><b>Columbia Business School</b><span>Research Scholar, Open Innovation</span></li>
+        <li><b>Technical University of Munich</b><span>Business &amp; Computer Science · top 3%</span></li>
+      </ul></div>
+      <div><span class="label">Languages</span><ul class="plain langs">
+        <li><b>German</b><span>Native</span></li><li><b>English</b><span>Fluent</span></li>
+        <li><b>Chinese</b><span>Fluent</span></li><li><b>French</b><span>Fluent</span></li>
+        <li><b>Spanish</b><span>Intermediate</span></li><li><b>Portuguese</b><span>Intermediate</span></li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="s band" id="approach">
+  <div class="wrap approach">
+    <img src="img/trail-portrait.jpg" alt="Christine climbing with poles during a mountain trail race" loading="lazy">
+    <div>
+      <p class="label">Approach</p>
+      <h2>See the finish line. Then run the next kilometre.</h2>
+      <p>I walk into ambiguity and build the system underneath it. First a sharp picture of where the business needs to be. Then the next kilometre: what a team ships this week, measured, adjusted and shipped again.</p>
+      <p>Strategy sets the destination, execution muscle gets you there. I bring both, which is what turns AI from ambition into everyday operations.</p>
+      <svg class="route4" viewBox="0 0 560 160" role="img" aria-labelledby="route4-t">
+        <title id="route4-t">Start with the vision, work back to the first step today, then move forward one step at a time</title>
+        <defs>
+          <marker id="ah-back" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" class="r4-head back"/></marker>
+          <marker id="ah-now" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 1 L9 5 L1 9" class="r4-head now"/></marker>
+          <marker id="ah-soft" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 1 L9 5 L1 9" class="r4-head soft"/></marker>
+        </defs>
+        <path d="M534 104 C 430 8, 130 8, 28 102" class="r4-back" marker-end="url(#ah-back)"/>
+        <text x="280" y="22" text-anchor="middle" class="r4-note">Work back from the vision</text>
+        <path d="M32.0 112 Q59.2 90 86.5 112" class="r4-hop now" marker-end="url(#ah-now)"/><path d="M94.5 112 Q121.8 90 149.0 112" class="r4-hop" marker-end="url(#ah-soft)"/><path d="M157.0 112 Q184.2 90 211.5 112" class="r4-hop" marker-end="url(#ah-soft)"/><path d="M219.5 112 Q246.8 90 274.0 112" class="r4-hop" marker-end="url(#ah-soft)"/><path d="M282.0 112 Q309.2 90 336.5 112" class="r4-hop" marker-end="url(#ah-soft)"/><path d="M344.5 112 Q371.8 90 399.0 112" class="r4-hop" marker-end="url(#ah-soft)"/><path d="M407.0 112 Q434.2 90 461.5 112" class="r4-hop" marker-end="url(#ah-soft)"/><path d="M469.5 112 Q496.8 90 524.0 112" class="r4-hop" marker-end="url(#ah-soft)"/>
+        <circle cx="20" cy="112" r="5" class="r4-today"/>
+        <circle cx="540" cy="112" r="7" class="r4-vision"/>
+        <text x="20" y="140" class="r4-lab">Today</text>
+        <text x="540" y="140" text-anchor="end" class="r4-lab r4-v">Vision</text>
+        <text x="280" y="140" text-anchor="middle" class="r4-lab r4-mid">Then the next step, and the next</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+
+<section class="s band" id="boards">
+  <div class="wrap">
+    <div class="s-head"><p class="label">Boards, investors &amp; speaking</p><h2>Beyond the day job</h2></div>
+    <div class="beyond2">
+      <div class="b-left">
+        <div class="cols two">
+          <div><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" /><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" /><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" /><path d="M10 6h4" /><path d="M10 10h4" /><path d="M10 14h4" /><path d="M10 18h4" /></svg>Former board seats</h3><ul>
+            <li><b>Navit</b><span>Board member</span></li>
+            <li><b>Squake</b><span>Board member</span></li>
+            <li><b>Travelshift</b><span>Non-Executive Director</span></li>
+          </ul></div>
+          <div><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17" /><polyline points="16 7 22 7 22 13" /></svg>Venture partnerships</h3><ul>
+            <li><b>Capitaur Ventures</b><span>Venture partner, Singapore</span></li>
+            <li><b>Fuel Ventures</b><span>Advisor, Europe and Singapore</span></li>
+            <li><b>BrightSky Ventures</b><span>Advisor, United States</span></li>
+            <li><b>Insignia Ventures Partners</b><span>Fellow</span></li>
+            <li><b>Asia-Connect Executive Partners</b><span>Partner, interim leadership across Asia</span></li>
+          </ul></div>
+        </div>
+        <div class="cols speak2">
+          <div><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><line x1="12" x2="12" y1="19" y2="22" /></svg>Speaking and media</h3><ul>
+            <li><b><a href="https://www.youtube.com/@chrisrodmax" target="_blank" rel="noopener">The Chris Rod Max Show</a></b><span>Co-host of a weekly AI and business podcast, 40+ episodes</span></li>
+            <li><b>Stages</b><span>SXSW, ITB Asia, Phocuswright, hub.berlin, Slush, Skift, Future Travel Experience, WiT, RISE</span></li>
+            <li><b>Recognition</b><span>Capital 40 Under 40; featured in FAZ, Handelsblatt, Tagesspiegel, Handelszeitung, n&#8209;tv, Capital, PhocusWire</span></li>
+          </ul></div>
+        </div>
+      </div>
+      <div class="b-photo"><img src="img/stage-keynote.jpg" alt="Christine Wang delivering a keynote" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="s" id="personal">
+  <div class="wrap">
+    <div class="s-head"><p class="label">Personal</p><h2>Off the clock</h2></div>
+    <div class="personal">
+      <div class="p-item"><img src="img/trail.jpg" alt="Christine racing at UTMB Chiang Mai" loading="lazy"><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z" /></svg>Trail racer</h3><ul class="facts"><li>Won TransLambak 6&#8209;hour, 2025</li><li>UTMB Val d’Aran 110&nbsp;km, OCC</li><li>3rd in age group, Chiang&nbsp;Mai</li></ul></div>
+      <div class="p-item"><img src="img/violin.jpg" alt="Christine playing violin in an orchestra" loading="lazy"><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg>Violinist</h3><ul class="facts"><li>Concertmaster and first violin in several orchestras</li><li>17 years of classical training</li></ul></div>
+      <div class="p-item"><img src="img/exhibition.jpg" alt="Christine at her photography exhibition in Shanghai" loading="lazy"><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /><circle cx="12" cy="13" r="3" /></svg>Artist</h3><ul class="facts"><li>Solo exhibition “Faces of the World, Faces of the Earth”, Shanghai 2018</li><li>In the news, extended, all sold</li></ul></div>
+      <div class="p-item"><img src="img/chess.jpg" alt="Christine playing chess" loading="lazy"><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" /><path d="M5 21h14" /></svg>Chess player</h3><ul class="facts"><li>Avid player</li><li>A game of patience, pattern and planning ahead</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact band" id="contact">
+  <div class="wrap">
+    <p class="label">Contact</p>
+    <h2>Let's talk about what you are building.</h2>
+    <p class="c-sub">Open to selected advisory, board and senior leadership<br>conversations in AI and innovation</p>
+    <div class="engage">
+      <div class="eng">
+        <span class="eng-k">Let's talk</span>
+        <div class="lines">
+          <div class="line"><div><span class="label"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>Email</span><b id="email">mail@wangchristine.com</b></div><button class="copy" type="button" id="copy">Copy</button></div>
+          <div class="line"><div><span class="label"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>LinkedIn</span><b><a href="https://www.linkedin.com/in/christinewang0/" target="_blank" rel="noopener">linkedin.com/in/christinewang0</a></b></div></div>
+        </div>
+      </div>
+      <div class="eng kit" id="kit">
+        <span class="eng-k">Not ready to talk yet?</span>
+        <h3>Start with the free AI Operating Model Kit</h3>
+        <p>A scorecard to see where you stand, a one-page operating model canvas and a plan for the first 90 days</p>
+        <a class="btn primary" href="kit/AI-Operating-Model-Kit-Christine-Wang.pdf" download><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" x2="12" y1="15" y2="3" /></svg>Download the kit</a>
+        <span class="kit-meta">PDF · 7 pages · free to use and share</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© 2026 Christine Wang</span><span>Singapore · Munich</span></div></footer>
+<script>
+(function(){
+  var copy=document.getElementById('copy');
+  copy.addEventListener('click',function(){
+    var el=document.getElementById('email');
+    function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);copy.textContent='Selected'}
+    try{navigator.clipboard.writeText(el.textContent).then(function(){copy.textContent='Copied';setTimeout(function(){copy.textContent='Copy'},1600)},sel)}catch(e){sel()}
+  });
+})();
+</script>
+<script>
+(function(){
+  var a=document.querySelector('.eng.kit .btn');
+  if(!a||!window.claude||typeof window.claude.use!=='function')return;
+  var dl=null;
+  window.claude.use('downloads').then(function(d){dl=d}).catch(function(){});
+  a.addEventListener('click',function(e){
+    if(!dl)return;
+    e.preventDefault();
+    fetch(a.getAttribute('href')).then(function(r){if(!r.ok)throw new Error('fetch');return r.blob()})
+      .then(function(blob){return dl.save({filename:'AI-Operating-Model-Kit-Christine-Wang.pdf',data:blob})})
+      .catch(function(err){if(!err||err.code!=='declined'){window.location.href=a.getAttribute('href')}});
+  });
+})();
+</script>
+
+</body>
+</html>
