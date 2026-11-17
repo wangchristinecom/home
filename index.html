@@ -405,6 +405,11 @@ footer{border-top:0}
 .eps a{display:flex;justify-content:space-between;gap:12px;padding:10px 0;color:var(--ink);text-decoration:none;font-size:var(--t-sm)}
 .eps a .i{width:15px;height:15px;color:var(--muted);flex:none;margin-top:3px}
 .eps a:hover{color:var(--accent)}
+.proof.vp{grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.proof.vp b{font-size:19px;line-height:1.25}
+.facts sup{font-size:.7em;line-height:0}
+@media (max-width:960px){.proof.vp{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.proof.vp{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -425,7 +430,7 @@ footer{border-top:0}
     <div class="hero-grid">
       <div class="hero-copy">
         <h1>Strategist, operator and builder</h1>
-        <p class="lede">Strategy at BCG, CEO of Meero China, venture spin-offs at Lufthansa Innovation Hub. Today I lead AI &amp; Digital Enablement at DHL Global Forwarding.</p>
+        <p class="lede">Strategy at BCG, CEO of Meero China, venture spin-offs at Lufthansa Innovation Hub. Today I lead AI transformation at DHL Global Forwarding, building better business systems: organisation, operating model and the AI that runs on them.</p>
         <div class="cta">
           <a class="btn primary" href="#experience">View experience</a>
           <a class="btn" href="#contact">Get in touch</a>
@@ -434,11 +439,11 @@ footer{border-top:0}
       </div>
       <figure class="portrait"><img src="headshot.jpg" alt="Portrait of Christine Wang" width="720" height="845"></figure>
     </div>
-    <div class="proof nums">
-      <div><b>90+</b><span>people in the AI &amp; Digital Enablement organisation I lead</span></div>
-      <div><b>Double-digit €M</b><span>profit potential in the AI portfolio</span></div>
-      <div><b>5</b><span>ventures launched at Lufthansa Innovation Hub</span></div>
-      <div><b>2</b><span>board seats at spin-offs, Navit and Squake</span></div>
+    <div class="proof vp">
+      <div><b>Across Europe and Asia</b><span>Six languages; leadership roles in Germany, China and Singapore</span></div>
+      <div><b>Building performant teams &amp; business systems</b><span>AI &amp; Digital Enablement from 0 → 1; Lufthansa Innovation Hub from 20 to 70 people</span></div>
+      <div><b>Bold and inspirational leader</b><span>Led Lufthansa Innovation Hub through the pandemic, reporting to the Executive Board</span></div>
+      <div><b>Intrapreneur and entrepreneur</b><span>Ventures built inside corporates; founder of CX Consulting; CEO of Meero China</span></div>
     </div>
   </div>
 </header>
@@ -456,7 +461,7 @@ footer{border-top:0}
 
 <section class="s" id="experience">
   <div class="wrap">
-    <div class="s-head"><p class="label">Experience</p><h2>Impact across fifteen years and two continents</h2></div>
+    <div class="s-head"><p class="label">Experience</p><h2>Impact across 16+ years</h2></div>
 
     <article class="role">
       <div class="role-meta">
@@ -465,13 +470,12 @@ footer{border-top:0}
         <span class="title">VP, AI &amp; Digital Enablement</span>
       </div>
       <div class="role-body">
-        <p>Mandate: build the AI capability of DHL Group's air and ocean freight business from scratch, and put it into daily use</p>
+        <p>Build the global AI capability and operating model for DHL Global Forwarding from scratch, and put it into daily use</p>
         <ul class="impact">
           <li><b>0 → 1</b>: built AI &amp; Digital Enablement from scratch; leads 90+ people across product, engineering and a dedicated AI delivery centre</li>
-          <li><b>Double-digit million profit potential</b> in the AI portfolio across pricing, tender management and sales</li>
-          <li><b>Months → weeks</b> AI delivery cycles, through a new build model and joint business-technology teams</li>
-          <li><b>Leads an AI pricing engine and agentic workflows</b> for rates and tenders, with experts validating every decision</li>
-          <li><b>Designed the AI-era operating model</b>: engagement model with the business units, governance and adoption built in from day one</li>
+          <li><b>Double-digit €M EBIT benefit potential</b> across pricing, tender management and sales</li>
+          <li><b>Years → weeks</b>: delivery cycles shortened through a new build model and joint business-technology teams</li>
+          <li><b>Solving industry problems</b>: an intelligent pricing engine and agentic workflows for rates and tenders, with experts validating every decision</li>
         </ul>
       </div>
     </article>
@@ -500,9 +504,10 @@ footer{border-top:0}
       <div class="role-body">
         <ul class="impact">
           <li><b>10 months</b> from Head of Asia to Managing Director, reporting to the Lufthansa Group Executive Board</li>
-          <li><b>Double-digit million budget</b> and teams across Berlin, Singapore and Shanghai</li>
-          <li><b>Through the pandemic</b>: led the restructuring and kept the venture pipeline running</li>
-          <li><b>5 ventures launched</b>: Navit and Squake spun out (board seat at both), plus Uptrip, Cloopio and Swifty, an early GPT-4 travel assistant</li>
+          <li><b>20 → 70 people</b>: scaled the team across Berlin, Singapore and Shanghai, with a double-digit million budget</li>
+          <li><b>2× revenue</b> during my tenure</li>
+          <li><b>Led the transformation through the pandemic</b>, from crisis management back to growth</li>
+          <li><b>12 ventures in the pipeline, 2 spun out</b>: built the venture-building engine; Navit and Squake spun out (board seat at both), and Swifty launched as an early GPT-4 travel assistant</li>
           <li><b>Top-rated digital lab</b> in Germany by Capital, 2023</li>
         </ul>
       </div>
@@ -516,9 +521,10 @@ footer{border-top:0}
       </div>
       <div class="role-body">
         <ul class="impact">
-          <li><b>2024 · 10 growth initiatives</b> for a European productivity-software company, which proved the B2B case and led to a dedicated B2B team</li>
-          <li><b>2024 · Saudi government mandate</b>: designed an immersive-tech incubator and secured partnerships across Saudi Arabia and the UAE</li>
+          <li><b>2024 · B2B business model</b>: evaluated a B2B model for a B2C-focused European productivity-software company; 10 growth initiatives proved the case and led to a dedicated B2B team</li>
+          <li><b>2024 · Saudi government mandate</b>: built organisational capabilities and an immersive-tech incubator, with partnerships across Saudi Arabia and the UAE</li>
           <li><b>2019 · CEO, Meero Greater China</b>: launched the China business of a French computer-vision unicorn, from local entity and team to a commercial pipeline</li>
+          <li><b>2019 · Digitalisation study</b> for a retail and FMCG player, focused on personalisation</li>
           <li><b>2018 · New business line for a global energy major</b>: built a circular-economy venture in China from concept to launch plan</li>
         </ul>
       </div>
@@ -548,8 +554,8 @@ footer{border-top:0}
       <div class="role-body">
         <ul class="impact">
           <li><b>Employee #1</b> of BCG Digital Ventures in Berlin, and its first Venture Architect in Shanghai; helped set up BCG Digital Ventures China</li>
-          <li><b>Built ventures from zero</b> in healthcare, insurance and sustainability</li>
-          <li><b>€50M synergies</b> identified on an industrial acquisition; operations optimisation in mining</li>
+          <li><b>Ventures launched</b> in healthtech, mobility tech and the circular economy, from concept to launch</li>
+          <li><b>Industrial goods clients</b>: supply-chain and product optimisation; €50M synergies identified on an acquisition; operations optimisation in mining</li>
         </ul>
       </div>
     </article>
@@ -574,9 +580,9 @@ footer{border-top:0}
     <img src="img/trail-portrait.jpg" alt="Christine climbing with poles during a mountain trail race" loading="lazy">
     <div>
       <p class="label">Approach</p>
-      <h2>See the finish line. Then run the next kilometre.</h2>
-      <p>Val d’Aran, 2026: 110&nbsp;km and 6,400&nbsp;m of climbing through the Pyrenees, finished in 24 hours. Nobody runs 110&nbsp;km at once. You fix the finish line, then run to the next aid station, and the next.</p>
-      <p>I lead transformation the same way: a sharp picture of where the business needs to be, then the next step a team can ship this week. Strategy sets the destination, execution gets you there.</p>
+      <h2>See the finish line. Then run the first step.</h2>
+      <p>Val d’Aran, 2026: 110&nbsp;km and 6,400&nbsp;m of climbing through the Pyrenees, finished in 24 hours. You set the goal, however impossible it seems, then break it down and run from one aid station to the next.</p>
+      <p>I lead transformation the same way: a sharp picture of where the business needs to be, then everyday steps that add up when you look back. Strategy and operational execution, from the same person.</p>
       <svg class="route4" viewBox="0 0 560 160" role="img" aria-labelledby="route4-t">
         <title id="route4-t">Start with the vision, work back to the first step today, then move forward one step at a time</title>
         <defs>
@@ -605,25 +611,26 @@ footer{border-top:0}
       <div class="b-left">
         <div class="cols two">
           <div><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" /><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" /><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" /><path d="M10 6h4" /><path d="M10 10h4" /><path d="M10 14h4" /><path d="M10 18h4" /></svg>Former board seats</h3><ul>
+            <li><b>Travelshift</b><span>Non-Executive Director</span></li>
             <li><b>Navit</b><span>Board member</span></li>
             <li><b>Squake</b><span>Board member</span></li>
-            <li><b>Travelshift</b><span>Non-Executive Director</span></li>
           </ul></div>
           <div><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17" /><polyline points="16 7 22 7 22 13" /></svg>Venture partnerships</h3><ul>
+            <li><b>Asia-Connect Executive Partners</b><span>Partner, providing interim leaders and general managers across Asia</span></li>
             <li><b>Capitaur Ventures</b><span>Venture partner, Singapore</span></li>
             <li><b>Fuel Ventures</b><span>Advisor, Europe and Singapore</span></li>
             <li><b>BrightSky Ventures</b><span>Advisor, United States</span></li>
             <li><b>Insignia Ventures Partners</b><span>Fellow</span></li>
-            <li><b>Asia-Connect Executive Partners</b><span>Partner, interim leadership across Asia</span></li>
+            <li><b>Earlybird</b></li>
           </ul></div>
         </div>
         <div class="cols speak2">
           <div><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><line x1="12" x2="12" y1="19" y2="22" /></svg>Speaking and media</h3><ul>
             <li><b><a href="https://www.youtube.com/@chrisrodmax" target="_blank" rel="noopener">The Chris Rod Max Show</a></b><span>Co-host of a weekly AI and business podcast, 40+ episodes</span></li>
             <li><b>Stages</b><span>SXSW, ITB Asia, Phocuswright, hub.berlin, Slush, Skift, Future Travel Experience, WiT, RISE</span></li>
-            <li><b>Recognition</b><span>Capital 40 Under 40; featured in FAZ, Handelsblatt, Tagesspiegel, Handelszeitung, n&#8209;tv, Capital, PhocusWire</span></li>
+            <li><b>Recognition</b><span>Capital 40 Under 40, Germany; featured in DACH news</span></li>
           </ul></div>
-          <div class="eps"><span class="eps-k">Latest episodes</span><ul><li><a href="https://www.youtube.com/watch?v=3d3XqU34oAY" target="_blank" rel="noopener">E41: AI infrastructure wars, creative jobs at risk, and OpenAI’s B2C play <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></li><li><a href="https://www.chrisrodmax.com/p/kurt-muehmel-from-dataiku-ai-adoption" target="_blank" rel="noopener">Kurt Muehmel from Dataiku: AI adoption, AgentOps and empathy in B2B <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></li><li><a href="https://www.chrisrodmax.com/p/e39-mistrals-1b-push-deepfake-threats" target="_blank" rel="noopener">E39: Mistral’s $1B push, deepfake threats and Europe’s AI future <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></li></ul></div>
+          <div class="eps"><span class="eps-k">Latest Chris Rod Max Show episodes</span><ul><li><a href="https://www.youtube.com/watch?v=3d3XqU34oAY" target="_blank" rel="noopener">E41: AI infrastructure wars, creative jobs at risk, and OpenAI’s B2C play <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></li><li><a href="https://www.chrisrodmax.com/p/kurt-muehmel-from-dataiku-ai-adoption" target="_blank" rel="noopener">E40: Kurt Muehmel from Dataiku: AI adoption, AgentOps and empathy in B2B <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></li><li><a href="https://www.chrisrodmax.com/p/e39-mistrals-1b-push-deepfake-threats" target="_blank" rel="noopener">E39: Mistral’s $1B push, deepfake threats and Europe’s AI future <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></li></ul></div>
         </div>
       </div>
       <div class="b-photo"><img src="img/stage-keynote.jpg" alt="Christine Wang delivering a keynote" loading="lazy"></div>
@@ -636,10 +643,10 @@ footer{border-top:0}
   <div class="wrap">
     <div class="s-head"><p class="label">Personal</p><h2>Off the clock</h2></div>
     <div class="personal">
-      <div class="p-item"><img src="img/trail.jpg" alt="Christine racing at UTMB Chiang Mai" loading="lazy"><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z" /></svg>Trail racer</h3><ul class="facts"><li>Won TransLambak 6&#8209;hour, 2025</li><li>UTMB Val d’Aran 110&nbsp;km, OCC</li><li>3rd in age group, Chiang&nbsp;Mai</li></ul></div>
-      <div class="p-item"><img src="img/violin.jpg" alt="Christine playing violin in an orchestra" loading="lazy"><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg>Violinist</h3><ul class="facts"><li>Concertmaster and first violin in several orchestras</li><li>17 years of classical training</li></ul></div>
+      <div class="p-item"><img src="img/trail.jpg" alt="Christine racing at UTMB Chiang Mai" loading="lazy"><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z" /></svg>Trail racer</h3><ul class="facts"><li>Won TransLambak MY, 2025</li><li>UTMB Val d’Aran 110k, UTMB OCC, 2026</li><li>3<sup>rd</sup> in age group, UTMB Chiang Mai, 2025</li></ul></div>
+      <div class="p-item"><img src="img/violin.jpg" alt="Christine playing violin in an orchestra" loading="lazy"><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg>Violinist</h3><ul class="facts"><li>Concertmaster and first violin in orchestras in Berlin, Munich and New York</li><li>17 years of classical training</li></ul></div>
       <div class="p-item"><img src="img/exhibition.jpg" alt="Christine at her photography exhibition in Shanghai" loading="lazy"><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /><circle cx="12" cy="13" r="3" /></svg>Artist</h3><ul class="facts"><li>Solo exhibition “Faces of the World, Faces of the Earth”, Shanghai 2018</li><li>In the news, extended, all sold</li></ul></div>
-      <div class="p-item"><img src="img/chess.jpg" alt="Christine playing chess" loading="lazy"><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" /><path d="M5 21h14" /></svg>Chess player</h3><ul class="facts"><li>Avid player</li><li>A game of patience, pattern and planning ahead</li></ul></div>
+      <div class="p-item"><img src="img/chess.jpg" alt="Christine playing chess" loading="lazy"><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" /><path d="M5 21h14" /></svg>Chess player</h3><ul class="facts"><li>Avid everyday player</li><li>Favourite openings: Queen’s Gambit with white, Sicilian with black</li></ul></div>
     </div>
   </div>
 </section>
