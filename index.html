@@ -416,6 +416,8 @@ footer{border-top:0}
 .b-photo img{position:absolute;inset:0;object-position:50% 20%}
 @media (max-width:860px){.b-photo{aspect-ratio:auto}}
 .lede-2{margin-top:12px;font-size:var(--t-md);color:var(--ink-2)}
+/* mobile fix: keynote photo keeps its own box, no overlap */
+@media (max-width:860px){.b-photo{aspect-ratio:4/5;min-height:0;order:-1;max-width:100%}.b-photo img{position:absolute;inset:0;height:100%}}
 </style>
 </head>
 <body>
@@ -448,8 +450,8 @@ footer{border-top:0}
     </div>
     <div class="proof vp">
       <div><b>Building performant AI teams &amp; business systems</b><span>DHL AI &amp; Digital Enablement operating model from 0 → 1</span></div>
-      <div><b>Intrapreneur and entrepreneur</b><span>Ventures built inside corporates; founder of CX Consulting; CEO of Meero China</span></div>
-      <div><b>Bold leader and advisor</b><span>Led Lufthansa Innovation Hub through the pandemic, reporting to the Executive Board</span></div>
+      <div><b>Intrapreneur and entrepreneur</b><span>Ventures built inside corporates; founder of CX Consulting; led an AI unicorn start-up in China</span></div>
+      <div><b>Bold leader and advisor</b><span>Led Lufthansa Innovation Hub through the pandemic, reporting to the Lufthansa Executive Board</span></div>
       <div><b>Across Europe and Asia</b><span>Six languages; leadership roles in Germany, China and Singapore</span></div>
     </div>
   </div>
