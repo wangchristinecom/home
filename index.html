@@ -418,17 +418,37 @@ footer{border-top:0}
 .lede-2{margin-top:12px;font-size:var(--t-md);color:var(--ink-2)}
 /* mobile fix: keynote photo keeps its own box, no overlap */
 @media (max-width:860px){.b-photo{aspect-ratio:4/5;min-height:0;order:-1;max-width:100%}.b-photo img{position:absolute;inset:0;height:100%}}
+/* mobile hamburger menu */
+.menu-btn{display:none;position:relative;width:40px;height:40px;margin-right:-8px;border:0;background:transparent;cursor:pointer;color:var(--ink)}
+.menu-btn span{position:absolute;left:10px;right:10px;height:1.75px;background:currentColor;border-radius:2px;transition:transform .2s ease,top .2s ease}
+.menu-btn span:first-child{top:15px}.menu-btn span:last-child{top:23px}
+.nav.open .menu-btn span:first-child{top:19px;transform:rotate(45deg)}
+.nav.open .menu-btn span:last-child{top:19px;transform:rotate(-45deg)}
+.nav-kit{display:none}
+@media (max-width:900px){
+  .menu-btn{display:block}
+  .nav.open ul{display:flex;flex-direction:column;gap:0;position:absolute;left:0;right:0;top:58px;background:var(--bg);border-bottom:1px solid var(--line);padding:6px max(16px,env(safe-area-inset-left,0px)) 14px;box-shadow:0 12px 24px rgba(0,0,0,.06)}
+  .nav.open ul li{border-bottom:1px solid var(--line)}
+  .nav.open ul li:last-child{border-bottom:0}
+  .nav.open ul a{display:block;padding:14px 4px;font-size:var(--t-md);color:var(--ink)}
+  .nav.open .nav-kit{display:block}
+  .nav.open .nav-kit a{color:var(--accent);font-weight:500}
+  .nav .wrap{position:relative}
+}
+@media (prefers-reduced-motion:reduce){.menu-btn span{transition:none}}
 </style>
 </head>
 <body>
 <nav class="nav" aria-label="Sections">
   <div class="wrap">
     <a class="mark" href="#top">Christine Wang</a>
-    <ul>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-list"><span></span><span></span></button>
+    <ul id="nav-list">
       <li><a href="#experience">Experience</a></li>
       <li><a href="#boards">Boards</a></li>
       <li><a href="#personal">Personal</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li class="nav-kit"><a href="#kit">Free AI Operating Model Kit</a></li>
     </ul>
   </div>
 </nav>
@@ -719,6 +739,16 @@ footer{border-top:0}
       .then(function(blob){return dl.save({filename:'AI-Operating-Model-Kit-Christine-Wang.pdf',data:blob})})
       .catch(function(err){if(!err||err.code!=='declined'){window.location.href=a.getAttribute('href')}});
   });
+})();
+</script>
+<script>
+(function(){
+  var nav=document.querySelector('.nav'),btn=nav&&nav.querySelector('.menu-btn');
+  if(!btn)return;
+  function set(open){nav.classList.toggle('open',open);btn.setAttribute('aria-expanded',open);btn.setAttribute('aria-label',open?'Close menu':'Open menu');}
+  btn.addEventListener('click',function(){set(!nav.classList.contains('open'))});
+  nav.querySelectorAll('#nav-list a').forEach(function(a){a.addEventListener('click',function(){set(false)})});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
 })();
 </script>
 
