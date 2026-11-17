@@ -410,6 +410,12 @@ footer{border-top:0}
 .facts sup{font-size:.7em;line-height:0}
 @media (max-width:960px){.proof.vp{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:600px){.proof.vp{grid-template-columns:1fr}}
+/* keynote photo: show full crop, no side cut */
+.beyond2{align-items:start}
+.b-photo{min-height:0;aspect-ratio:4/5}
+.b-photo img{position:absolute;inset:0;object-position:50% 20%}
+@media (max-width:860px){.b-photo{aspect-ratio:auto}}
+.lede-2{margin-top:12px;font-size:var(--t-md);color:var(--ink-2)}
 </style>
 </head>
 <body>
@@ -430,7 +436,8 @@ footer{border-top:0}
     <div class="hero-grid">
       <div class="hero-copy">
         <h1>Strategist, operator and builder</h1>
-        <p class="lede">Strategy at BCG, CEO of Meero China, venture spin-offs at Lufthansa Innovation Hub. Today I lead AI transformation at DHL Global Forwarding, building better business systems: organisation, operating model and the AI that runs on them.</p>
+        <p class="lede">I turn ambitious strategy into working businesses: new business models, the teams and operating model to run them, and AI built into the core.</p>
+        <p class="lede lede-2">Today I lead AI &amp; Digital Enablement at DHL Global Forwarding. Before that, I scaled Lufthansa Innovation Hub from a small team into a full organisation, ran an AI start-up in China, and built ventures and strategy at BCG and BCG&nbsp;X.</p>
         <div class="cta">
           <a class="btn primary" href="#experience">View experience</a>
           <a class="btn" href="#contact">Get in touch</a>
@@ -440,10 +447,10 @@ footer{border-top:0}
       <figure class="portrait"><img src="headshot.jpg" alt="Portrait of Christine Wang" width="720" height="845"></figure>
     </div>
     <div class="proof vp">
-      <div><b>Across Europe and Asia</b><span>Six languages; leadership roles in Germany, China and Singapore</span></div>
-      <div><b>Building performant teams &amp; business systems</b><span>AI &amp; Digital Enablement from 0 → 1; Lufthansa Innovation Hub from 20 to 70 people</span></div>
-      <div><b>Bold and inspirational leader</b><span>Led Lufthansa Innovation Hub through the pandemic, reporting to the Executive Board</span></div>
+      <div><b>Building performant AI teams &amp; business systems</b><span>DHL AI &amp; Digital Enablement operating model from 0 → 1</span></div>
       <div><b>Intrapreneur and entrepreneur</b><span>Ventures built inside corporates; founder of CX Consulting; CEO of Meero China</span></div>
+      <div><b>Bold leader and advisor</b><span>Led Lufthansa Innovation Hub through the pandemic, reporting to the Executive Board</span></div>
+      <div><b>Across Europe and Asia</b><span>Six languages; leadership roles in Germany, China and Singapore</span></div>
     </div>
   </div>
 </header>
@@ -461,7 +468,7 @@ footer{border-top:0}
 
 <section class="s" id="experience">
   <div class="wrap">
-    <div class="s-head"><p class="label">Experience</p><h2>Impact across 16+ years</h2></div>
+    <div class="s-head"><p class="label">Experience</p><h2>Impact across 16+ years globally</h2></div>
 
     <article class="role">
       <div class="role-meta">
@@ -474,7 +481,7 @@ footer{border-top:0}
         <ul class="impact">
           <li><b>0 → 1</b>: built AI &amp; Digital Enablement from scratch; leads 90+ people across product, engineering and a dedicated AI delivery centre</li>
           <li><b>Double-digit €M EBIT benefit potential</b> across pricing, tender management and sales</li>
-          <li><b>Years → weeks</b>: delivery cycles shortened through a new build model and joint business-technology teams</li>
+          <li><b>Months → weeks</b>: delivery cycles shortened through a new build model and joint business-technology teams</li>
           <li><b>Solving industry problems</b>: an intelligent pricing engine and agentic workflows for rates and tenders, with experts validating every decision</li>
         </ul>
       </div>
@@ -532,6 +539,20 @@ footer{border-top:0}
 
     <article class="role">
       <div class="role-meta">
+        <span class="yr">2017 – 2018</span>
+        <span class="org">BCG Digital Ventures</span>
+        <span class="title">Lead Venture Architect, Shanghai</span>
+      </div>
+      <div class="role-body">
+        <ul class="impact">
+          <li><b>First Venture Architect in Shanghai</b>; helped set up BCG Digital Ventures China</li>
+          <li><b>Ventures launched</b> in mobility tech and the circular economy, from concept to launch</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="role">
+      <div class="role-meta">
         <span class="yr">2016 – 2017</span>
         <span class="org">Alibaba Group</span>
         <span class="title">Global Leadership Associate, leadership rotation programme</span>
@@ -547,18 +568,18 @@ footer{border-top:0}
 
     <article class="role">
       <div class="role-meta">
-        <span class="yr">2012 – 2018</span>
+        <span class="yr">2012 – 2015</span>
         <span class="org">BCG &amp; BCG Digital Ventures</span>
-        <span class="title">Project Leader, Lead Venture Architect</span>
+        <span class="title">Consultant; first employee of BCG Digital Ventures Berlin</span>
       </div>
       <div class="role-body">
         <ul class="impact">
-          <li><b>Employee #1</b> of BCG Digital Ventures in Berlin, and its first Venture Architect in Shanghai; helped set up BCG Digital Ventures China</li>
-          <li><b>Ventures launched</b> in healthtech, mobility tech and the circular economy, from concept to launch</li>
+          <li><b>Employee #1</b> of BCG Digital Ventures in Berlin; launched a healthtech venture</li>
           <li><b>Industrial goods clients</b>: supply-chain and product optimisation; €50M synergies identified on an acquisition; operations optimisation in mining</li>
         </ul>
       </div>
     </article>
+
 
     <div class="edu">
       <div><span class="label">Education</span><ul class="plain">
@@ -577,7 +598,7 @@ footer{border-top:0}
 
 <section class="s band" id="approach">
   <div class="wrap approach">
-    <img src="img/trail-portrait.jpg" alt="Christine climbing with poles during a mountain trail race" loading="lazy">
+    <img src="img/trail-portrait.jpg" alt="Christine on a trail above Chamonix with the Mont Blanc massif behind" loading="lazy">
     <div>
       <p class="label">Approach</p>
       <h2>See the finish line. Then run the first step.</h2>
@@ -617,11 +638,8 @@ footer{border-top:0}
           </ul></div>
           <div><h3><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17" /><polyline points="16 7 22 7 22 13" /></svg>Venture partnerships</h3><ul>
             <li><b>Asia-Connect Executive Partners</b><span>Partner, providing interim leaders and general managers across Asia</span></li>
-            <li><b>Capitaur Ventures</b><span>Venture partner, Singapore</span></li>
-            <li><b>Fuel Ventures</b><span>Advisor, Europe and Singapore</span></li>
-            <li><b>BrightSky Ventures</b><span>Advisor, United States</span></li>
-            <li><b>Insignia Ventures Partners</b><span>Fellow</span></li>
-            <li><b>Earlybird</b></li>
+            <li><b>Capitaur · Fuel · BrightSky</b><span>Venture partner and advisor, across Singapore, Europe and the US</span></li>
+            <li><b>Insignia Ventures Partners · Earlybird</b><span>Fellow; limited partner</span></li>
           </ul></div>
         </div>
         <div class="cols speak2">
